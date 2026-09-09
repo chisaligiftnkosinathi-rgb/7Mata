@@ -1,0 +1,10 @@
+{
+  "name": "@7mata/admin",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "echo Admin application reserved for control plane UI",
+    "build": "echo Admin build placeholder"
+  }
+}

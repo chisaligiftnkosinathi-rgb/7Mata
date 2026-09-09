@@ -1,0 +1,34 @@
+{
+  "name": "@7mata/api",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@7mata/domain": "workspace:*",
+    "@7mata/shared": "workspace:*",
+    "@7mata/database": "workspace:*",
+    "@7mata/auth": "workspace:*",
+    "@7mata/compliance": "workspace:*",
+    "@7mata/dispatch": "workspace:*",
+    "@7mata/pricing": "workspace:*",
+    "@7mata/ledger": "workspace:*",
+    "@7mata/evidence": "workspace:*",
+    "fastify": "^5.2.1",
+    "@fastify/cors": "^10.0.2",
+    "@fastify/helmet": "^13.0.1",
+    "@fastify/sensible": "^6.0.3",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.3",
+    "@types/node": "^22.13.0"
+  }
+}

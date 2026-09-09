@@ -1,0 +1,32 @@
+{
+  "name": "7mata",
+  "private": true,
+  "version": "0.1.0",
+  "description": "7MATA Mobility Operating System",
+  "packageManager": "pnpm@11.23.0",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "dev": "pnpm --parallel --filter './apps/*' dev",
+    "build": "pnpm -r build",
+    "typecheck": "pnpm -r typecheck",
+    "lint": "pnpm -r lint",
+    "test": "pnpm -r test",
+    "test:e2e": "pnpm --filter @7mata/testing test:e2e",
+    "db:generate": "pnpm --filter @7mata/database db:generate",
+    "db:migrate": "pnpm --filter @7mata/database db:migrate",
+    "db:push": "pnpm --filter @7mata/database db:push",
+    "db:seed": "pnpm --filter @7mata/database db:seed",
+    "db:studio": "pnpm --filter @7mata/database db:studio",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "clean": "pnpm -r clean"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.0",
+    "prettier": "^3.5.0",
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.5"
+  }
+}
