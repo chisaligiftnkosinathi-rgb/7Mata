@@ -19,5 +19,14 @@
   "devDependencies": {
     "drizzle-kit": "^0.30.5",
     "tsx": "^4.19.3"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
   }
 }

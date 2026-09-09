@@ -12,7 +12,7 @@
     "build": "pnpm -r build",
     "typecheck": "pnpm -r typecheck",
     "lint": "pnpm -r lint",
-    "test": "pnpm -r test",
+    "test": "vitest run",
     "test:e2e": "pnpm --filter @7mata/testing test:e2e",
     "db:generate": "pnpm --filter @7mata/database db:generate",
     "db:migrate": "pnpm --filter @7mata/database db:migrate",
@@ -21,9 +21,11 @@
     "db:studio": "pnpm --filter @7mata/database db:studio",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "clean": "pnpm -r clean"
+    "clean": "pnpm -r clean",
+    "test:all": "pnpm -r test"
   },
   "devDependencies": {
+    "@7mata/domain": "workspace:*",
     "@types/node": "^22.13.0",
     "prettier": "^3.5.0",
     "typescript": "^5.7.3",
