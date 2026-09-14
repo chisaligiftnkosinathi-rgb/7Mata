@@ -25,8 +25,20 @@
     "test:all": "pnpm -r test"
   },
   "devDependencies": {
+    "@7mata/compliance": "workspace:*",
+    "@7mata/database": "workspace:*",
     "@7mata/domain": "workspace:*",
+    "@7mata/evidence": "workspace:*",
+    "@7mata/ledger": "workspace:*",
+    "@7mata/pricing": "workspace:*",
+    "@types/better-sqlite3": "^9.6.0",
     "@types/node": "^22.13.0",
+    "@types/pg": "^8.23.1",
+    "better-sqlite3": "^13.0.3",
+    "drizzle-orm": "^0.38.4",
+    "pg": "^8.23.0",
+    "pg-mem": "^3.0.14",
+    "postgres": "^3.4.9",
     "prettier": "^3.5.0",
     "typescript": "^5.7.3",
     "vitest": "^3.0.5"

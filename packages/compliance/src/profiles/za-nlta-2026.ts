@@ -1,14 +1,20 @@
-/*
- * IMPORTANT:
- * This profile is an architectural baseline only.
- * Every legal requirement must be independently verified
- * against authoritative South African regulatory sources
- * before production use.
- */
+import {
+  DRIVER_PDP_VALID_RULE,
+  VEHICLE_ROADWORTHY_RULE,
+  VEHICLE_INSURANCE_VALID_RULE,
+  OPERATING_AUTHORITY_VALID_RULE,
+  SEVEN_SEATER_CAPABILITY_RULE,
+} from '../rules/za-nlta-rules.js';
 
 export const ZA_NLTA_2026 = {
   name: 'ZA-NLTA',
   version: '2026.1',
-  status: 'BASELINE_PENDING_LEGAL_VERIFICATION',
-  rules: [],
-} as const;
+  status: 'ACTIVE_BASELINE',
+  rules: [
+    DRIVER_PDP_VALID_RULE,
+    VEHICLE_ROADWORTHY_RULE,
+    VEHICLE_INSURANCE_VALID_RULE,
+    OPERATING_AUTHORITY_VALID_RULE,
+    SEVEN_SEATER_CAPABILITY_RULE,
+  ],
+};
